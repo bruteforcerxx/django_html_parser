@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+        {% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TEST TEMPLATE</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static './images/favicon.png' %}">
+    <!-- Custom Stylesheet -->
+
+    <link rel="stylesheet" href="{% static './vendor/toastr/toastr.min.css' %}">
+    <link rel="stylesheet" href="{% static './css/style.css' %}">
+</head>
+
+<body>
+<section>
+    <div>
+        <img src="{% static 'img/picture.jpg' %}" alt="my picture" />
+        <img src="{% static 'img/picture.jpeg' %}">" alt="my picture" />
+        <img src="{% static 'img/picture.png' %}" alt="my picture" />
+        <img src="{% static 'img/picture.svg' %}" alt="my picture" />
+    </div>
+
+    <div>
+        <a href="{% url 'index' %}"></a>
+        <a href="{% url 'about' %}"></a>
+        <a href="{% url 'contact' %}"></a>
+        <a href="{% url ' ' %}"></a>
+    </div>
+
+    <div>
+        <form action="{% url ' ' %}"></form>
+    </div>
+
+
+</section>
+
+    <script src="{% static './vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static './vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+
+    <script src="{% static './vendor/toastr/toastr.min.js' %}"></script>
+    <script src="{% static './vendor/toastr/toastr-init.js' %}"></script>
+
+    <script src="{% static './vendor/circle-progress/circle-progress.min.js' %}"></script>
+    <script src="{% static './vendor/circle-progress/circle-progress-init.js' %}"></script>
+
+
+    <!--  flot-chart js -->
+    <script src="{% static './vendor/apexchart/apexcharts.min.js' %}"></script>
+    <script src="{% static './vendor/apexchart/apexchart-init.js' %}"></script>
+    <script src="{% static './vendor/apexchart/apexchart2-init.js' %}"></script>
+
+
+    <script src="{% static './js/scripts.js' %}"></script>
+</body>
+
+</html>
